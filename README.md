@@ -1,7 +1,7 @@
 <h1 tabindex="-1">sass-chevron-mixin</h1>
 <p>This is a simple mixin for creating chevron arrows, which can be useful if you don't want to include icon fonts or use SVG images in your project. It can be used to style slider controls, carousel controls, scroll buttons, etc. Based on the use of pseudo-elements and the css border property. Works in all modern browsers</p>
 <h2 tabindex="-1">Live demo</h2>
-<p><a href="#" target="_blank">Live demo and examples</a></p>
+<p><a href="https://vincentvega1984.github.io/sass-chevron-mixin/" target="_blank">Live demo and examples</a></p>
 <h2 tabindex="-1">Settings</h2>
 <ul>
   <li><code>$direction</code> - required parameter, can take values - left, right, top, bottom</li>
