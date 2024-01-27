@@ -1,0 +1,102 @@
+@import 'normalize';
+@import 'colors';
+@import 'typo';
+@import 'chevron-mixin';
+
+body {
+    font-family: $font;
+}
+
+h1 {
+    color: $color-3;
+}
+
+.examples {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    &__row {
+        margin: 0 0 40px;
+        display: flex;
+
+        &-title {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            margin: 0 0 40px;
+        }
+    }
+}
+
+.example {
+    flex: 1 1 0;
+    border: 1px solid $color-4;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 0 10px;
+    text-align: center;
+    height: 200px;
+    position: relative;
+
+    &__title {
+        font-weight: 700;
+        margin: 0 0 10px;
+    }
+
+    &__element {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.chevron-left {
+    @include btn-circle-chevron(left)
+}
+
+.chevron-right {
+    @include btn-circle-chevron(right)
+}
+
+.chevron-top {
+    @include btn-circle-chevron(top)
+}
+
+.chevron-bottom {
+    @include btn-circle-chevron(bottom)
+}
+
+.chevron-right-filled {
+    @include btn-circle-chevron(right, true, 36px, $color-5, $color-1)
+}
+
+.chevron-left-filled {
+    @include btn-circle-chevron(left, true, 36px, $color-5, $color-1)
+}
+
+.chevron-top-filled {
+    @include btn-circle-chevron(top, true, 36px, $color-5, $color-1)
+}
+
+.chevron-bottom-filled {
+    @include btn-circle-chevron(bottom, true, 36px, $color-5, $color-1)
+}
+
+.chevron-right-big {
+    @include btn-circle-chevron(right, true, 64px, $color-2, $color-3, 20px)
+}
+
+.chevron-left-big {
+    @include btn-circle-chevron(left, true, 64px, $color-2, $color-3, 20px)
+}
+
+.chevron-top-big {
+    @include btn-circle-chevron(top, true, 64px, $color-2, $color-3, 20px)
+}
+
+.chevron-bottom-big {
+    @include btn-circle-chevron(bottom, true, 64px, $color-2, $color-3, 20px)
+}
